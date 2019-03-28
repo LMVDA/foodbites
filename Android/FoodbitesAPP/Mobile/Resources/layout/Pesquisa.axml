@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <TextView
+        android:text="FoodBites"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/textViewPesTitle"
+        android:textColor="#ff004d40"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout99"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPesTitle"
+        android:background="#ffffffff"
+        android:layout_marginTop="20dp">
+        <ImageButton
+            android:gravity="center"
+            android:src="@drawable/icons8filter48"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButtonFilter"
+            android:background="#ffffffff"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_marginLeft="10dp" />
+        <SearchView
+            android:gravity="center"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/searchViewPes"
+            android:background="#ae474747"
+            android:layout_below="@id/textViewPesTitle"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutFiltro1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout99"
+        android:background="#ffffffff"
+        android:layout_marginTop="30dp"
+        android:minHeight="30dp">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:text="Distância:"
+            android:gravity="center"
+            android:textColor="#ff153512"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold" />
+        <SeekBar
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/seekBar1"
+            android:max="100"
+            android:progress="4"
+            android:thumbTint="#ff2e7d32" />
+        <TextView
+            android:gravity="center"
+            android:text="3 Km"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#ff153512"
+            android:id="@+id/textViewPesKMs"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutFiltro2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutFiltro1"
+        android:background="#ffffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:minHeight="30dp">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewPesPreMIN"
+            android:text="Preço Min:"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff153512" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/editTextPrecoMin"
+            android:textColor="#ff000000" />
+        <TextView
+            android:text="Preço Max:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#ff153512"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/textViewPesPreMAX"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/editTextPrecoMax"
+            android:textColor="#ff000000" />
+    </LinearLayout>
+    <Button
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:id="@+id/buttonPesMicro"
+        android:drawableTop="@drawable/iconMicro"
+        android:text="Voz"
+        android:textColor="#ff000000"
+        android:background="@drawable/customborderBt"
+        android:textStyle="bold"
+        android:layout_below="@id/linearLayoutFiltro2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp" />
+    <Button
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:id="@+id/buttonPesHist"
+        android:drawableTop="@drawable/iconHist"
+        android:text="Histórico"
+        android:textColor="#ff000000"
+        android:background="@drawable/customborderBt"
+        android:textStyle="bold"
+        android:layout_below="@id/linearLayoutFiltro2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonPesMicro"
+        android:background="#ffffffff"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:layout_weight="1"
+            android:id="@+id/buttonPesPerf"
+            android:drawableTop="@drawable/iconPerfil"
+            android:text="Perfil"
+            android:textColor="#ff000000"
+            android:background="@drawable/customborderBt"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:layout_weight="1"
+            android:id="@+id/buttonPesAval"
+            android:drawableTop="@drawable/iconAval"
+            android:text="Avaliações"
+            android:textColor="#ff000000"
+            android:background="@drawable/customborderBt"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:layout_width="@dimen/box_size"
+            android:layout_height="@dimen/box_size"
+            android:layout_weight="1"
+            android:id="@+id/buttonPesTend"
+            android:drawableTop="@drawable/iconTend"
+            android:text="Tendências"
+            android:textColor="#ff000000"
+            android:background="@drawable/customborderBt"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+</RelativeLayout>

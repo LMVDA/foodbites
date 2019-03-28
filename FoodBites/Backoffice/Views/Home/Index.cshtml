@@ -1,0 +1,15 @@
+﻿<!--<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>-->
+@{
+    ViewBag.Title = "Inicio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Bem-vindo ao Backoffice da FoodBites</h2>
+	<h4> Aqui pode criar, atualizar e remover: 
+	    <p>
+		<ul>
+			<li> @Html.ActionLink("Petiscos", "Index", "Petiscos") </li>
+		    <li> @Html.ActionLink("Especialidades", "Index", "Especialidades") </li>
+		    <li> @Html.ActionLink("Estabelecimentos", "Index", "Estabelecimentos") </li>
+		</ul>
+    </h4>

@@ -1,0 +1,19 @@
+﻿@model Domain.Petisco.HorarioFuncionamento
+
+@{
+    bool escolhido = false;
+
+    if (ViewData.ContainsKey("Escolhido")) 
+    {
+        escolhido = (bool)ViewData["Escolhido"];
+    }
+}
+
+@Html.HiddenFor(m => m.Dia)
+<tr>
+<th>@Html.CheckBox("Aberto", escolhido)</th>
+<th>@Html.DisplayFor(m => m.Dia) : </th>
+<th>@Html.EditorFor(m => m.HoraAbertura)</th>
+<th>   até   </th>
+<th>@Html.EditorFor(m => m.HoraFecho) </th>
+</tr>

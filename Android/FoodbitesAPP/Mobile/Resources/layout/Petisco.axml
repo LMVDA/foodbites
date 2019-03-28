@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ffffffff"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPetNome"
+            android:textStyle="bold"
+            android:textColor="#ff1b5e20"
+            android:text="Nome do Petisco"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPetEstab"
+            android:textStyle="bold"
+            android:textColor="#ff1b5e20"
+            android:text="Nome Estabelecimento"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPetTlm"
+            android:textStyle="bold"
+            android:textColor="#ff1b5e20"
+            android:text="Nr Telemovel"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBarPet"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="3"
+            android:layout_gravity="center"
+            android:progressTint="#fff1ff00"
+            android:progressBackgroundTint="#ff161616"
+            android:secondaryProgressTint="#ff667003"
+            android:indeterminateTint="#ff47c61f" />
+        <ImageView
+            android:src="@drawable/fork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewPet"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:text="Preço:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ff1b5e20"
+            android:id="@+id/textViewPetPreco"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp" />
+        <TextView
+            android:text="Características:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ff1b5e20"
+            android:id="@+id/textViewPetCars"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="20dp"
+            android:textStyle="italic"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="50"
+            android:textColor="#ff1b5e20"
+            android:text="Críticas:\nMuito bom, recomendo.\nMuito salgado, mas estava bom.\nAtendimento do melhor, 5 estrelas."
+            android:id="@+id/textViewCriticas" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:layout_marginTop="5dp">
+            <Button
+                android:layout_width="@dimen/box_size"
+                android:layout_height="@dimen/box_size"
+                android:layout_weight="1"
+                android:id="@+id/buttonPetPartilhar"
+                android:drawableTop="@drawable/icons8share48"
+                android:textColor="#ff000000"
+                android:background="#ffffff"
+                android:textStyle="bold"
+                android:text="Partilhar"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" />
+            <Button
+                android:layout_width="@dimen/box_size"
+                android:layout_height="@dimen/box_size"
+                android:layout_weight="1"
+                android:id="@+id/buttonPetDirecao"
+                android:drawableTop="@drawable/icons8mapmarker48"
+                android:textColor="#ff000000"
+                android:background="#ffffff"
+                android:textStyle="bold"
+                android:text="Direções"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

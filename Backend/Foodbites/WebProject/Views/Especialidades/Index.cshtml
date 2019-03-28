@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Domain.Petisco.Especialidade>
+
+@{
+    ViewBag.Title = "Especialidades";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Especialidades</h2>
+
+<br/>
+
+<h4> @Html.ActionLink("Criar Novo", "Create") </h4>
+
+<br/>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Preco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fotografia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estabelecimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Caracteristicas)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Preco) €
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fotografia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estabelecimento.Nome)
+        </td>
+        <td>
+			<b>|</b>
+		@foreach (var texto in item.Caracteristicas) {
+			@Html.DisplayFor(modelItem => texto) 
+			<b>|</b>
+		}
+        </td>
+        <td>
+            @Html.ActionLink("Editar",   "Edit",    new { id = item.IdEspecialidade }) |
+            @Html.ActionLink("Desativar",  "Desativar",  new { id = item.IdEspecialidade })
+        </td>
+    </tr>
+}
+
+</table>

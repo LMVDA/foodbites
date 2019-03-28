@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fastenshtein" Version="1.0.0.4" />
+    <PackageReference Include="System.ValueTuple" Version="4.3.1" />
+    <PackageReference Include="GeoCoordinate.NetStandard1" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Pesquisa\PedidoPesquisa.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAOS\" />
+    <Folder Include="DAOS\Interfaces\" />
+    <Folder Include="Backoffice\" />
+  </ItemGroup>
+</Project>

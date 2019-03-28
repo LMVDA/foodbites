@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{A8F3BAE8-1193-4337-AC15-4BEA218F0616}|Default">
+  <MonoDevelop.Ide.ItemProperties.FoodbitesAPP AndroidDesignerPreferredDevice="Nexus 5" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile/ApiHTTP.cs">
+    <Files>
+      <File FileName="Mobile/ApiHTTP.cs" Line="26" Column="58" />
+      <File FileName="../../Backend/Foodbites/WebProject/Program.cs" Line="17" Column="40" />
+      <File FileName="../../Backend/Foodbites/WebProject/Controllers/API/UtilizadorController.cs" Line="52" Column="36" />
+      <File FileName="../../Backend/Foodbites/Domain/Pesquisa/Pesquisa.cs" Line="1" Column="1" />
+      <File FileName="../../Backend/Foodbites/Domain/Pesquisa/PesquisaFacade.cs" Line="1" Column="1" />
+      <File FileName="Mobile/AvaliacoesListViewAdapter.cs" Line="1" Column="1" />
+      <File FileName="Mobile/PetiscoActivity.cs" Line="91" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Mobile AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.SelectDevice" />
+</Properties>

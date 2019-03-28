@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{8E580064-8892-49E1-B683-EDA602E20BFF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Android/FoodbitesAPP/Mobile/ApiHTTP.cs">
+    <Files>
+      <File FileName="../../Android/FoodbitesAPP/Mobile/ApiHTTP.cs" Line="26" Column="58" />
+      <File FileName="WebProject/Program.cs" Line="17" Column="40" />
+      <File FileName="WebProject/Controllers/API/UtilizadorController.cs" Line="52" Column="36" />
+      <File FileName="Domain/Pesquisa/Pesquisa.cs" Line="1" Column="1" />
+      <File FileName="Domain/Pesquisa/PesquisaFacade.cs" Line="1" Column="1" />
+      <File FileName="../../Android/FoodbitesAPP/Mobile/AvaliacoesListViewAdapter.cs" Line="1" Column="1" />
+      <File FileName="../../Android/FoodbitesAPP/Mobile/PetiscoActivity.cs" Line="91" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

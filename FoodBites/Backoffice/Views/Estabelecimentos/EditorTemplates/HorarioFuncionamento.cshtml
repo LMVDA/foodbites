@@ -1,0 +1,10 @@
+﻿@model Backoffice.Models.Petiscos.HorarioFuncionamento
+@Html.HiddenFor(m => m.ID)
+@Html.HiddenFor(m => m.Dia)
+<tr>
+<th>@Html.CheckBoxFor(m => m.Ativo) </th>
+<th>@Html.DisplayFor(m => m.Dia) : </th>
+<th>@Html.EditorFor(m => m.HoraAbertura)</th>
+<th> até </th>
+<th>@Html.EditorFor(m => m.HoraFecho) </th>
+</tr>

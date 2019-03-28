@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Backoffice.Models.Petiscos.Estabelecimento>
+@{
+    ViewBag.Title = "Estabelecimentos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Estabelecimentos</h2>
+
+<br/>
+
+<h4> @Html.ActionLink("Criar Novo", "Create") </h4>
+
+<br/>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+        <th>
+            Localização
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Localizacao)
+        </td>
+        <td>
+            @Html.ActionLink("Editar",   "Edit",    new { id=item.ID }) |
+            @Html.ActionLink("Remover",  "Delete",  new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
